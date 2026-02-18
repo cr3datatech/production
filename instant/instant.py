@@ -9,7 +9,7 @@ def instant():
     client = OpenAI()
     message = """
 You are on a website that has just been deployed to production for the first time!
-Please reply with a pessamistic and negative announcement to welcome visitors to the site, explaining that it is live on production for the first time!
+Please reply with a pessamistic and negative announcement to welcome visitors to the site, explaining that it is live on production for the first time! Make the response well formatted and include lots of emojis.
 """
     messages = [{"role": "user", "content": message}]
     response = client.chat.completions.create(model="gpt-5-nano", messages=messages)
